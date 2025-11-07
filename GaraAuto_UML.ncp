@@ -1,0 +1,88 @@
+<Project>
+  <Name>GaraAuto</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Auto</Name>
+        <Access>Public</Access>
+        <Location left="384" top="33" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int numero</Member>
+        <Member type="Field">private double velocita</Member>
+        <Member type="Field">private doulbe distanzaPercorsa</Member>
+        <Member type="Field">private boolean inBox</Member>
+        <Member type="Field">private Giudice podio</Member>
+        <Member type="Method">public void run()</Member>
+        <Member type="Method">public void pitStop()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GaraAuto</Name>
+        <Access>Public</Access>
+        <Location left="83" top="33" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;Auto&gt; autoList</Member>
+        <Member type="Field">private double distanzaGara</Member>
+        <Member type="Method">public void avviaGara()</Member>
+        <Member type="Method">public void attendiFineGara()</Member>
+        <Member type="Method">public void mostraPodio()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Giudice</Name>
+        <Access>Public</Access>
+        <Location left="83" top="312" />
+        <Size width="173" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;String&gt; podio</Member>
+        <Member type="Field">private int vincitore</Member>
+        <Member type="Method">public List&lt;String&gt; getClassifica()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>Thread</Name>
+        <Access>Public</Access>
+        <Location left="384" top="312" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void start()</Member>
+        <Member type="Method">void sleep(long ms)</Member>
+        <Member type="Method">void join()</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>Runnable</Name>
+        <Access>Public</Access>
+        <Location left="662" top="33" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void run()</Member>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Dependency" first="1" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="1" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="0" second="4">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="0" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
