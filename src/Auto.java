@@ -24,9 +24,9 @@ public class Auto implements Runnable {
 
                 
                 if (random.nextDouble() < 0.002) {
-                    System.out.println("🔧 Auto " + numero + " entra in pit stop!");
+                    System.out.println("Auto " + numero + " entra in pit stop!");
                     pitStop();
-                    System.out.println("✅ Auto " + numero + " esce dal pit stop.");
+                    System.out.println("Auto " + numero + " esce dal pit stop.");
                 }
 
                 if (!inBox) {
